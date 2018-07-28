@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div ng-app="" ng-init="a=16;b=30">
+                <p>
+                    <input type="text" class="text-center" ng-model="first">
+                    <input type="text" class="text-center" ng-model="last">
+                </p>
+                <p >
+                with ng-app directive:<br>
+                addition of (20,50) : {{20+50}}<br> sub of (100,70) : {{100-70}}<br>mul of (16,30):{{a*b}}<br>
+                fullName : {{first+" "+last}}
+                </p>
+            </div>
+            <div>
+                <p>
+                without ng-app directive:<br>
+                add : {{20+50}}<br>
+                fullName : {{first+" "+last}}
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

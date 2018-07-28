@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myapp" ng-controller="myctrl">
+            <input type="date" class="text-center" ng-model="day"><br>
+            <br> date:{{day|date}}<br>
+            <br> RS: {{rupees|currency}}
+        </div>
+        <script>
+            var app = angular.module('myapp',[]);
+            app.controller('myctrl',function($scope){
+                $scope.rupees= 250;
+            })
+        </script>
+    </body>
+</html>

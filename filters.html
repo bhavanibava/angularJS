@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myapp" ng-controller="myctrl">
+            <input type="text" class="text-center" ng-model="firstName"><br>
+            <input type="text" class="text-center" ng-model="lastName"><br>
+            <br>
+            <p>
+                fullname using filters: <br>
+                {{firstName | uppercase}},{{lastName|uppercase}}<br>
+                {{firstName | lowercase}},{{lastName|lowercase}}<br>
+                {{firstName | uppercase}},{{lastName|uppercase}}
+            </p>
+            <script>
+                    var app = angular.module('myapp',[]);
+                    app.controller('myctrl',function($scope){
+                        $scope.firstName = "sayee";
+                        $scope.lastName = "kumar";
+                    });
+            </script>

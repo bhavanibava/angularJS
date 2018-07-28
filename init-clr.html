@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+<!-- init color using ng-init -->
+            <div ng-app="" ng-init="bgcolor='skyblue'">
+            <p>here we apply background color</p><br>
+            <input type="text" class="text-center" style="background-color: {{bgcolor}}"><br>
+            <input type="text" class="text-center" placeholder="name">
+            </div>
+        </div>
+    </body>
+</html>

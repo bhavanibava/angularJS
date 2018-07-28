@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="values=['bhava','sai','kumar','bhavani']">
+            <p>display Array values using ng-repeat directive </p>
+            <ul>
+                <li ng-repeat="a in values">
+                    {{ a }}
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

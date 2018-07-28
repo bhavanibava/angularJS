@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+        <div class="jumbotron">
+            <p>Name : <input type="text" class="text-center" placeholder="enter name" ng-model="name">
+            <h3>welcome {{name}}</h3></p>
+            <!-- using ng-bind -->
+            <p>using ng-bind to print name:<span ng-bind="name"></span></p>
+        </div>
+    </body>
+</html>

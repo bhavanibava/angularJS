@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="../../public/lib/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="myctrl">
+        <p>TimeOut function:</p>
+        <h3>{{msg}}</h3> 
+    </div>
+    <script>
+        var app = angular.module('myapp',[]);
+        app.controller('myctrl',function($scope,$timeout){
+            $scope.msg = "Hi";
+            $timeout(function(){
+                $scope.msg = "Hello";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

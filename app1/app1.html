@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>app1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../public/lib/bootstrap.min.css">
+        <script src="../../public/lib/angular.min.js"></script>
+        <script src="./myapp.js"></script>
+        <script src="./control.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div ng-app="myapp" ng-controller="myctrl">
+            <h2 class="text-center">MyApp</h2>
+            <p>
+     <!-- value from control file -->
+                Name : {{name}}<br>password : {{psw}}
+            </p>
+    <!-- input value from frontend -->
+            <input type="text" class="text-center" ng-model="myname">
+            <input type="password" class="text-center" ng-model="mypsw">
+            <p>you given values are: {{myname+" "+mypsw}}</p>
+        </div>
+    </div>
+    </body>
+</html>

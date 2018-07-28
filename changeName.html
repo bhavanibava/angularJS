@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/lib/bootstrap.min.css">
+        <script src="../public/lib/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myname" ng-controller="myctrl">
+            headerName :
+            <h3 ng-click="changeName()">{{name}}</h3>
+            <p>click header name to change value</p>
+        </div>
+        <script>
+            var app = angular.module('myname',[]);
+            app.controller('myctrl',function($scope){
+                $scope.name = "first";
+                $scope.changeName = function(){
+                    $scope.name = "changed name";
+                }
+            });
+        </script>
+    </body>
+</html>
